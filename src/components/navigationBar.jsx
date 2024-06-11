@@ -5,16 +5,16 @@ function NavigationBar() {
     <nav>
       <ul>
         <li>
-          <a href="default.asp">Home</a>
+          <a href="#">Contact</a>
         </li>
         <li>
-          <a href="news.asp">News</a>
+          <a href="#">About</a>
         </li>
         <li>
-          <a href="contact.asp">Contact</a>
+          <a href="#">News</a>
         </li>
         <li>
-          <a href="about.asp">About</a>
+          <a href="#">Home</a>
         </li>
       </ul>
     </nav>
