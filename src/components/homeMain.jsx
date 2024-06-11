@@ -16,7 +16,7 @@ function HomeMain() {
       ],
       typeSpeed: 100,
       backDelay: 1800,
-      backSpeed: 90,
+      backSpeed: 25,
       loop: true,
     });
 

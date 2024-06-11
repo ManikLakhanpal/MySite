@@ -28,6 +28,13 @@ li a {
   text-align: center;
   padding: 14px 25px;
   text-decoration: none;
+  position: relative;
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: normal;
+  
 }
 
 li a:hover {
@@ -38,12 +45,12 @@ img {
   margin: 50px 0;
   height: 400px;
   width: 400px;
-  border: 7px solid gainsboro;
   border-radius: 100%;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 img:hover {
-  border-color: #66c3c7;
+  box-shadow: 0 0 30px rgba(54, 0, 105, 0.7);
 }
 
 main {
@@ -62,6 +69,13 @@ main {
   justify-content: center;
   align-items: center;
   height: 100%;
+  position: relative;
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction:normal;
+  
   /* border: 1px solid white; Testing */
 }
 
@@ -106,9 +120,25 @@ main {
   border-radius: 8px;
   font-size: 17px;
   margin: 5px 10px;
+  transition: transform 0.4s, background-color 0.4s, color 0.4s, box-shadow 0.5s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .social-button:hover {
   background-color: #66c3c7;
   color: #f5f5f5;
+  transform: scale(1.091);
+  box-shadow: 0 0 20px #66c3c7b3;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+    opacity: 0%;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 100%;
+  }
 }
