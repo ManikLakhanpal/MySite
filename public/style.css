@@ -8,18 +8,17 @@ body {
 }
 
 nav {
-  font-size: 28px;
+  font-size: 1.6vw;
 }
 
 ul {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-}
-
-li {
-  float: right;
 }
 
 li a {
@@ -39,19 +38,18 @@ li a {
 
 li a:hover {
   background-color: #282033;
+  text-decoration: underline;
 }
 
 img {
   margin: 50px 0;
-  height: 400px;
-  width: 400px;
-  border-radius: 100%;
+  width: 30vw;
+  border: 7px solid #49898b;
+  border-radius: 51% 49% 48% 52% / 49% 49% 51% 51%;
   transition: box-shadow 0.3s ease-in-out;
+  animation: borderAnimation 5s linear infinite;
 }
 
-img:hover {
-  box-shadow: 0 0 30px rgba(54, 0, 105, 0.7);
-}
 
 main {
   margin-top: 50px;
@@ -79,8 +77,19 @@ main {
   /* border: 1px solid white; Testing */
 }
 
+.main-child > h1 {
+  font-size: 3vw;
+  font-weight: 8000;
+}
+
+.main-child > h2 {
+  font-size: 1.8vw;
+  font-weight: 5000;
+}
+
+
 .main-child > p {
-  font-size: 19px;
+  font-size: 1.2vw;
 }
 
 .main-info {
@@ -114,11 +123,11 @@ main {
 }
 
 .social-button {
-  background-color: rgba(245, 245, 245, 0.828);
-  padding: 14px 25px;
-  border: 0;
-  border-radius: 8px;
-  font-size: 17px;
+  background-color: rgba(245, 245, 245, 0.1);
+  padding: 20px;
+  border: 1px solid #66c3c7;;
+  color: #66c3c7;;
+  border-radius: 100%;
   margin: 5px 10px;
   transition: transform 0.4s, background-color 0.4s, color 0.4s, box-shadow 0.5s;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -140,5 +149,23 @@ main {
   to {
     transform: translateX(0px);
     opacity: 100%;
+  }
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-radius: 51% 49% 48% 52% / 49% 49% 51% 51%;
+  }
+
+  35% {
+    border-radius: 60% 40% 57% 43% / 40% 54% 46% 60%;
+  }
+
+  65% {
+    border-radius: 67% 33% 68% 32% / 27% 70% 30% 73%;
+  }
+
+  100% {
+    border-radius: 51% 49% 48% 52% / 49% 49% 51% 51%;
   }
 }

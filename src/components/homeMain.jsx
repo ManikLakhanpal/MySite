@@ -1,6 +1,6 @@
 import React from "react";
 import Typed from "typed.js";
-import { GitHubButton, TwitterButton } from "./socalButtons";
+import { GitHubButton, TwitterButton, LinkedInButton } from "./socalButtons";
 
 function HomeMain() {
   const el = React.useRef();
@@ -47,8 +47,9 @@ function HomeMain() {
           📚✨
         </p>
         <div className="action-button">
-          <GitHubButton text="Github" />
-          <TwitterButton text="Twitter" />
+          <GitHubButton  />
+          <TwitterButton />
+          <LinkedInButton />
         </div>
       </div>
     </main>

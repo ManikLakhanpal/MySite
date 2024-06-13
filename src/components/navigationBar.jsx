@@ -8,10 +8,10 @@ function NavigationBar() {
           <a href="#">Contact</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#">Portfolio</a>
         </li>
         <li>
-          <a href="#">News</a>
+          <a href="#">About</a>
         </li>
         <li>
           <a href="#">Home</a>
