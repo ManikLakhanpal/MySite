@@ -51,7 +51,7 @@ img {
 }
 
 
-main {
+.main {
   margin-top: 50px;
   display: grid;
   grid-template-columns: 5fr 7fr;
