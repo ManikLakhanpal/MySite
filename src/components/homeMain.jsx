@@ -27,11 +27,11 @@ function HomeMain() {
   }, []);
 
   return (
-    <main>
+    <section className="main">
       <div className="main-child">
         <img
           className="profilePicture"
-          src="../../../public/images/Profile.jpg"
+          src="https://media.licdn.com/dms/image/D5603AQEWl0XJIItw8g/profile-displayphoto-shrink_400_400/0/1710506597763?e=1723680000&v=beta&t=SYNtrJfZ4ZChKztxDaM6pckwsgcXQHtmA6MCtbPonPc"
         />
       </div>
       <div className="main-child main-info">
@@ -52,7 +52,7 @@ function HomeMain() {
           <LinkedInButton />
         </div>
       </div>
-    </main>
+    </section>
   );
 }
 
