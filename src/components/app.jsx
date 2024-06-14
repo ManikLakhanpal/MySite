@@ -1,6 +1,7 @@
 import React from "react";
 import NavigationBar from "./navigationBar";
 import HomeMain from "./homeMain";
+import About from "./about";
 
 function App() {
   
@@ -8,6 +9,7 @@ function App() {
     <div>
       <NavigationBar />
       <HomeMain />
+      <About />
     </div>
   );
 }
