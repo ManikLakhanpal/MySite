@@ -11,7 +11,7 @@ function NavigationBar() {
           <a href="#">Portfolio</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="#">About me</a>
         </li>
         <li>
           <a href="#">Home</a>

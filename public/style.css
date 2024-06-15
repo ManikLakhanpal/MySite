@@ -148,14 +148,33 @@ img {
 }
 
 .about > h1 {
-  font-size: 45px;
+  font-size: 3.2vw;
   font-weight: 8000;
   color: #66c3c7;
   text-align: center;
 }
 
+.about-main {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  grid-template-rows: auto;
+  align-items: center;
+}
+
 .about-content {
-  font-size: 23px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5vw;
+  margin: 2vw;
+}
+
+.about-profile {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  font-size: 1.5vw;
+  align-items: center;
   margin: 2vw;
 }
 
