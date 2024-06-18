@@ -2,6 +2,7 @@ import React from "react";
 import NavigationBar from "./navigationBar";
 import HomeMain from "./homeMain";
 import About from "./about";
+import Portfolio from "./portfilio";
 
 function App() {
   
@@ -10,6 +11,7 @@ function App() {
       <NavigationBar />
       <HomeMain />
       <About />
+      <Portfolio />
     </div>
   );
 }

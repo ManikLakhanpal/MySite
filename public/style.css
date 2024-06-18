@@ -27,7 +27,7 @@ li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 25px;
+  padding: 0.9vw 1.56vw; /* Adjusted from 14px 25px */
   text-decoration: none;
   position: relative;
   animation-name: slideInLeft;
@@ -35,7 +35,6 @@ li a {
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-direction: normal;
-  
 }
 
 li a:hover {
@@ -43,26 +42,24 @@ li a:hover {
   text-decoration: underline;
 }
 
-img {
-  margin: 50px 0;
+.profilePicture {
+  margin: 3.125vw 0; /* Adjusted from 50px 0 */
   width: 30vw;
-  border: 7px solid #49898b;
+  border: 0.27vw solid #49898b; /* Adjusted from 7px */
   border-radius: 51% 49% 48% 52% / 49% 49% 51% 51%;
   transition: box-shadow 0.3s ease-in-out;
   animation: borderAnimation 5s linear infinite;
 }
 
-
 .main {
   height: 100%;
-  margin-top: 50px;
+  margin-top: 3.125vw; /* Adjusted from 50px */
   display: grid;
   grid-template-columns: 5fr 7fr;
   grid-template-rows: auto;
   align-items: center;
-  background-color: rgba(135, 135, 135, 0.5);
-  /* border: 1px solid white; Testing */
-  border-radius: 5px;
+  background-color: rgba(135, 135, 135, 0.2);
+  border-radius: 0.31vw; /* Adjusted from 5px */
 }
 
 .main-child {
@@ -75,21 +72,18 @@ img {
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
-  animation-direction:normal;
-  
-  /* border: 1px solid white; Testing */
+  animation-direction: normal;
 }
 
 .main-child > h1 {
   font-size: 3vw;
-  font-weight: 8000;
+  font-weight: 800;
 }
 
 .main-child > h2 {
   font-size: 1.8vw;
-  font-weight: 5000;
+  font-weight: 500;
 }
-
 
 .main-child > p {
   font-size: 1.2vw;
@@ -98,8 +92,7 @@ img {
 .main-info {
   flex-direction: column;
   align-items: start;
-  padding-left: 20px;
-  /* border: 1px solid white; Testing */
+  padding-left: 1.25vw; /* Adjusted from 20px */
 }
 
 #typed {
@@ -115,8 +108,8 @@ img {
 }
 
 .main-info > p {
-  padding-right: 13px;
-  margin-right: 20px;
+  padding-right: 0.8vw; /* Adjusted from 13px */
+  margin-right: 1.25vw; /* Adjusted from 20px */
 }
 
 .action-button {
@@ -126,12 +119,12 @@ img {
 }
 
 .social-button {
-  background-color: rgba(245, 245, 245, 0.1);
-  padding: 20px;
-  border: 1px solid #66c3c7;;
-  color: #66c3c7;;
+  background-color: rgba(245, 245, 245, 0.02);
+  padding: 1.56vw; /* Adjusted from 25px */
+  border: 0.04vw solid #66c3c7; /* Adjusted from 1px */
+  color: #66c3c7;
   border-radius: 100%;
-  margin: 5px 10px;
+  margin: 0.31vw 0.62vw; /* Adjusted from 5px 10px */
   transition: transform 0.4s, background-color 0.4s, color 0.4s, box-shadow 0.5s;
   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -140,16 +133,16 @@ img {
   background-color: #66c3c7;
   color: #f5f5f5;
   transform: scale(1.091);
-  box-shadow: 0 0 20px #66c3c7b3;
+  box-shadow: 0 0 1.25vw #66c3c7b3; /* Adjusted from 20px */
 }
 
 .about {
-  height: 100vh;
+  height: 80vh;
 }
 
 .about > h1 {
   font-size: 3.2vw;
-  font-weight: 8000;
+  font-weight: 800;
   color: #66c3c7;
   text-align: center;
 }
@@ -164,18 +157,55 @@ img {
 .about-content {
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   font-size: 1.5vw;
-  margin: 2vw;
+  margin: 1.25vw; /* Adjusted from 2vw */
 }
 
 .about-profile {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   font-size: 1.5vw;
   align-items: center;
-  margin: 2vw;
+  margin: 1.25vw; /* Adjusted from 2vw */
+}
+
+.portfolio {
+  height: 130vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  grid-template-rows: 2fr 2fr 2fr;
+  row-gap: 1.56vw; /* Adjusted from 25px */
+  padding: 1.25vw; /* Adjusted from 20px */
+  border-radius: 1.25vw 1.25vw 0 0; /* Adjusted from 20px 20px 0px 0px */
+  background-color: rgba(135, 135, 135, 0.2);
+ 
+}
+
+.card {
+  width: 80%;
+  border-radius: 1.25vw; /* Adjusted from 20px */
+  background-color: rgb(21, 3, 30);
+  padding: 1.25vw 0.94vw; /* Adjusted from 20px 15px */
+  border: 0.31vw solid #49898b; /* Adjusted from 5px */
+}
+
+.thumbnail {
+  width: 100%;
+  border-radius: 1.2rem;
+}
+
+.card-head {
+  width: 100%;
+  display: flex;
+  padding: 0.62vw; /* Adjusted from 10px */
+  justify-content: space-between;
+}
+
+.card-text {
+  width: 100%;
 }
 
 @keyframes slideInLeft {

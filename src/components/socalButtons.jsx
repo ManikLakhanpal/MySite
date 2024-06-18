@@ -5,8 +5,8 @@ function GitHubButton() {
     <button type="button" className="social-button">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
+        width="23"
+        height="23"
         fill="currentColor"
         viewBox="0 0 16 16"
       >
@@ -21,8 +21,8 @@ function TwitterButton() {
     <button type="button" className="social-button">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
+        width="23"
+        height="23"
         fill="currentColor"
         viewBox="0 0 16 16"
       >
@@ -37,8 +37,8 @@ function LinkedInButton() {
     <button type="button" className="social-button">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
+        width="23"
+        height="23"
         fill="currentColor"
         viewBox="0 0 16 16"
       >
