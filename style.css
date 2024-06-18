@@ -271,6 +271,10 @@ li a:hover {
     padding: 2vw 3vw;
   }
 
+  .main-child {
+    height: 100%;
+  }
+
   .profilePicture {
     margin: 5vw 0;
     width: 50vw;
@@ -287,11 +291,13 @@ li a:hover {
 
   .main-child > p {
     height: auto;
-    font-size: 3vw;
-  }
+    font-size: 3.3vw;
+    text-align: center;
+    }
 
   .main-info {
-    padding-left: 3vw;
+    padding: 3em 0px;
+    align-items: center;
   }
 
   .main-info > h1 {
@@ -323,6 +329,10 @@ li a:hover {
     margin: 2.5vw;
   }
 
+  .about-profile > .profilePicture {
+    display: none;
+  }
+
   .portfolio > h1 {
     font-size: 6vw;
     margin-bottom: 5vw;
@@ -333,11 +343,13 @@ li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 3em;
   }
 
   .card {
-    width: 70%;
+    width: 76%;
     padding: 3vw 2vw;
+    margin: 1em;
   }
 
   .card-head > h1 {
