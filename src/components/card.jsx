@@ -10,10 +10,9 @@ function Card(props) {
       />
       <div className="card-head">
         <h1>{props.title}</h1>
-        <GitHubButton/>
+        <GitHubButton />
       </div>
-      <div className="card-text">
-        {props.text}
+      <div className="card-text" dangerouslySetInnerHTML={{ __html: props.content }}>
       </div>
     </div>
   );

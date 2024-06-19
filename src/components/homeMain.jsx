@@ -1,6 +1,6 @@
 import React from "react";
 import Typed from "typed.js";
-import { GitHubButton, TwitterButton, LinkedInButton } from "./socalButtons";
+import { GitHubButton, TwitterButton, LinkedInButton, DiscordButton } from "./socalButtons";
 
 function HomeMain() {
   const el = React.useRef();
@@ -50,6 +50,7 @@ function HomeMain() {
           <GitHubButton  />
           <TwitterButton />
           <LinkedInButton />
+          <DiscordButton />
         </div>
       </div>
     </section>

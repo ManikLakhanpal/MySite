@@ -222,6 +222,15 @@ li a:hover {
   width: 100%;
 }
 
+.card-text > a {
+  color: #66c3c7;
+  text-decoration: none;
+}
+
+.card-text > a:hover {
+  color: aqua;
+}
+
 @keyframes slideInLeft {
   from {
     transform: translateX(-300px);

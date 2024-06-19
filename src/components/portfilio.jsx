@@ -10,7 +10,7 @@ function Portfolio() {
       <div className="portfolio-main">
         {
           data.map((item) => {
-            return <Card key={item.id} title={item.title} text={item.content} link={item.link}/>
+            return <Card key={item.id} title={item.title} link={item.link} content={item.content}/>
           })
         }
       </div>
