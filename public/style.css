@@ -9,8 +9,8 @@ body {
 
 nav {
   font-size: 1.6vw;
-  background-color: rgba(17, 17, 17, 0.1);
-  position: sticky;
+  background-color: rgba(17, 17, 17, 0.5);
+  width: 100%;
 }
 
 ul {
@@ -53,7 +53,7 @@ li a:hover {
 
 .main {
   height: 100%;
-  margin-top: 3.125vw;
+  /* margin-top: 3.125vw; */
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -132,7 +132,9 @@ li a:hover {
 }
 
 .about {
-  height: 80vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .about > h1 {
@@ -143,10 +145,10 @@ li a:hover {
 }
 
 .about-main {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  display: flex;
   align-items: center;
+  justify-content: space-around;
+  flex-grow: 1;
 }
 
 .about-content,
@@ -166,6 +168,8 @@ li a:hover {
   border-radius: 1.25vw 1.25vw 0 0;
   background-color: rgba(135, 135, 135, 0.2);
   padding: 1.25vw;
+  padding-bottom: 5em;
+  height: auto;
 }
 
 .portfolio > h1 {
@@ -177,11 +181,10 @@ li a:hover {
 }
 
 .portfolio-main {
-  height: 130vh;
+  height: auto;
   width: 90%;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   row-gap: 1.56vw;
 }
 
@@ -302,7 +305,7 @@ li a:hover {
     height: auto;
     font-size: 3.3vw;
     text-align: center;
-    }
+  }
 
   .main-info {
     padding: 3em 0px;
