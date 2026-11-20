@@ -27,14 +27,18 @@ function HomeMain() {
   }, []);
 
   return (
-    <section className="main">
+    <section className="main" id="home">
       <div className="main-child">
-        <img
-          className="profilePicture"
-          src="/images/Profile.jpeg"
-        />
+        <div className="profile-frame">
+          <img
+            className="profilePicture"
+            src="/images/Profile.jpeg"
+            alt="Manik Lakhanpal"
+          />
+        </div>
       </div>
       <div className="main-child main-info">
+        <div className="kicker">Now playing</div>
         <h1>Manik Lakhanpal</h1>
         <h2>
           A <span id="typed" ref={el}></span>{" "}

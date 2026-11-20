@@ -5,9 +5,8 @@ import About from "./about";
 import Portfolio from "./portfilio";
 
 function App() {
-  
   return (
-    <div>
+    <div className="app">
       <NavigationBar />
       <HomeMain />
       <About />

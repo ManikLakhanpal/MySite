@@ -4,6 +4,7 @@ function GitHubButton(props) {
   return (
     <a
       target="_blank"
+      rel="noreferrer"
       href={props.link ? props.link : "https://github.com/ManikLakhanpal"}
     >
       <button type="button" className="social-button">
@@ -25,6 +26,7 @@ function TwitterButton(props) {
   return (
     <a
       target="_blank"
+      rel="noreferrer"
       href={props.link ? props.link : "https://x.com/w1_manik"}
     >
       <button type="button" className="social-button">
@@ -46,6 +48,7 @@ function LinkedInButton(props) {
   return (
     <a
       target="_blank"
+      rel="noreferrer"
       href={
         props.link
           ? props.link
@@ -71,6 +74,7 @@ function DiscordButton(props) {
   return (
     <a
       target="_blank"
+      rel="noreferrer"
       href={
         props.link
           ? props.link
